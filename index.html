@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_2</title>
+    <link href="./doctype.css" rel = "stylesheet">
+
+  <style>
+    #check
+    {
+      position: absolute;
+      background: rgb(255, 239, 136);
+      top: 80px;
+      left: 18px;
+    }
+    label{
+      padding-left:10px;
+    }
+    input:checked ~ label
+    {
+        background-color: red;
+    }
+    input:checked + label{
+      background-color: rgb(136, 0, 255)
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class ="square1"><b>Я ТРЕТИЙ</b></div>
+      <div class ="square2"><b>Я ЧЕТВЁРТЫЙ</b></div>
+      <div class ="square3"><b>Я ПЕРВЫЙ</b></div>
+      <div class ="square4"><b>Я ВТОРОЙ</b></div>
+    </div>
+
+    <div id="check" align="center">
+      <p><font color="#8b008b">Выберите цифру</font></p>
+      <input type="radio" name="rd"/><label>1</label>
+      <input type="radio" name="rd"/><label>2</label>
+      <input type="radio" name="rd"/><label>3</label>
+        <input type="radio" name="rd"/><label>4</label>
+    </div>
+</body>
+</html>
